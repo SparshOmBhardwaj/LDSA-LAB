@@ -1,0 +1,92 @@
+/* Futuristic Cyber-Aesthetic CSS for LDSA Lab */
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #05050f; /* Deep space black */
+    color: #e0e0e0;
+    /* Soft glowing orbs in the background */
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(0, 243, 255, 0.05), transparent 30%),
+        radial-gradient(circle at 85% 30%, rgba(176, 38, 255, 0.05), transparent 30%);
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    background: rgba(5, 5, 15, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 243, 255, 0.15);
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #00f3ff !important;
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.6);
+}
+
+/* Cyber-Hero Section with Dark Overlay */
+.hero-cyber {
+    padding: 180px 0 120px 0;
+    /* High-tech orbital network image */
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+    position: relative;
+}
+
+/* Darkens the background image so text pops */
+.hero-cyber::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(5, 5, 15, 0.75), #05050f);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Neon Outline Button */
+.btn-neon {
+    background: transparent;
+    color: #00f3ff;
+    border: 1px solid #00f3ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background: rgba(0, 243, 255, 0.1);
+    color: #ffffff;
+    box-shadow: inset 0 0 15px rgba(0,243,255,0.4), 0 0 20px rgba(0,243,255,0.4);
+    transform: translateY(-2px);
+}
+
+/* Translucent Glass Cards */
+.cyber-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 40px 20px;
+    transition: all 0.4s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 243, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 243, 255, 0.15);
+}
+
+/* Typography Accents */
+.text-cyan {
+    color: #00f3ff;
+}
+.text-glow {
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
